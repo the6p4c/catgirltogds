@@ -2,6 +2,8 @@ catgirltogds
 ============
 converts catgirls to gds files
 
+![](_tweet.png)
+
 ```
 usage: catgirltogds.py [-h] [--rects RECTS] img [gds] [cell_name]
 
