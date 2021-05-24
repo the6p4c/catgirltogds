@@ -8,7 +8,7 @@ def parse_args():
     parser.add_argument('img', help='image to convert')
     parser.add_argument('gds', nargs='?', help='gds to export, default to image filename with gds extension')
     parser.add_argument('cell_name', nargs='?', help='name of the cell, default to image filename')
-    parser.add_argument('--rects', help='try to use filling rects (vv slow)')
+    parser.add_argument('--rects', action='store_const', const=True, default=False, help='try to use filling rects (vv slow)')
     return parser.parse_args()
 
 def is_set(p):
